@@ -1,0 +1,46 @@
+<html>
+<body>
+{% include 'header.html' %}
+ {% load static %}
+		<!--Content starts here-->
+	<div class="container">
+   <center><h1>Registration Form</h1></center>
+     <div class="row">
+     <div class="col-sm-4">
+        <img src="images/register.jpg">
+     </div>
+        <div class="col-sm-4">
+         <form action="signup_vendor_db.jsp">
+              <label>Vendor Id:</label>
+                <input type="text" class="form-control" name="vid">
+  <label>Name:</label>
+  <input type="name" class="form-control" name="vname">
+    <label>Password:</label>
+  <input type="password" class="form-control" name="pass">
+  
+  <label>Mobile:</label>
+  <input type="text" class="form-control" name="mobile">
+  <label>Address:</label>
+  <input type="text" class="form-control" name="addr">
+  <label>email:</label>
+  <input type="email" class="form-control" name="email">
+        
+        </div>
+        <div class="col-sm-4">
+        
+        <label>State:</label>
+  <input type="text" class="form-control" name="state">
+  <label>City:</label>
+  <input type="text" class="form-control" name="city">
+  <label>Landmark:</label>
+  <input type="text" class="form-control" name="landmark">
+  <br>  <br>  
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="reset" class="btn btn-primary">Clear</button>
+</form>
+   </div>
+   </div>
+ </div>
+{% include 'footer.html' %}
+</body>
+</html>
